@@ -1,0 +1,43 @@
+@import '@porsche-design-system/components-js';
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+main {
+  display: grid;
+  gap: 16px;
+  max-width: 1100px;
+}
+h1 {
+  font-size: 22px;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+#strategies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+table {
+  border-collapse: collapse;
+  font: 13px/1.4 ui-monospace, monospace;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.good {
+  color: #070;
+  font-weight: 600;
+}
+.bad {
+  color: #c00;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus an input when p-modal opens</title>
+  </head>
+  <body>
+    <main>
+      <h1>Focus an input when <code>p-modal</code> opens</h1>
+      <p>
+        Each button opens the same modal with a <code>p-input-text</code> and tries a different way to focus the input.
+        The focused element (resolved through shadow roots) is sampled after opening.
+      </p>
+      <div id="strategies"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Strategy</th>
+            <th>0ms</th>
+            <th>50ms</th>
+            <th>100ms</th>
+            <th>300ms</th>
+            <th>1000ms</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </main>
+
+    <p-modal id="modal" aria="{ 'aria-label': 'Subscribe' }">
+      <p-input-text id="email" label="Email" name="email"></p-input-text>
+    </p-modal>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
